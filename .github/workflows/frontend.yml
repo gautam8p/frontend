@@ -16,6 +16,11 @@ jobs:
         service_account_key: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
         export_default_credentials: true
 
+    - name: npm fix
+      run: |
+        npm install --package-lock-only
+        npm audit fix --force
+
     - name: docker-build
       run: make build
 
