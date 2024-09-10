@@ -16,7 +16,7 @@ jobs:
         service_account_key: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
         export_default_credentials: true
 
-    - name: docker-builds
+    - name: docker-build
       run: make build
 
 
