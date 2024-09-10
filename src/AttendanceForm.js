@@ -59,7 +59,7 @@ const FormikApp = withFormik({
   },
   handleSubmit(values, { props, resetForm, setErrors, setSubmitting }) {
     console.log(JSON.stringify(values))
-    fetch('/attendance/create', {
+    fetch('http://localhost:3000/api/v1/salary/search/all', {
       method: 'POST',
       body: JSON.stringify(values),
       headers: {
