@@ -21,7 +21,7 @@ jobs:
         npm install --package-lock-only
         npm audit fix --force
 
-    - name: docker-build
+    - name: docker-builds
       run: make build
 
 
