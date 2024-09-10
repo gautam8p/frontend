@@ -25,7 +25,7 @@ jobs:
       run: make build
 
 
-    - name: First builds
+    - name: First build
       env:
         GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
       run: |
